@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <script>
+        function Bank()
+        {
+       this.amount=4000;   
+       this.withdraw=function(amount)
+       {
+           var amt1=parseInt(amount);
+           if(this.amount>=amt1)
+           {
+           document.getElementById("abc").innerHTML=amt1+" amount withdrawn successfully";
+           this.amount-=amt1;
+           }
+           else{
+            document.getElementById("abc").innerHTML="Insufficient amount";
+               
+           }
+       }  
+       this.balance=function()
+       {
+           document.getElementById("abc").innerHTML="Balance is "+this.amount;
+       }
+        }
+        var b=new Bank();
+     </script>
+     <body bgcolor="pink">
+          Enter an amount to withdraw: <input type="text" id="amt"/>
+         <button onclick="b.withdraw(amt.value)">withdraw</button>
+    <button onclick="b.balance()">balance</button>
+         <p id="abc"></p>
+        </bo

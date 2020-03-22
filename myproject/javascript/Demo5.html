@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <script>
+        function Bank()
+        {
+       this.amount=4000;   
+       this.withdraw=function(amount)
+       {
+           var amt1=parseInt(amount);
+           console.log(amt1+" amount withdrawn successfully");
+           this.amount-=amt1;
+       }  
+       this.balance=function()
+       {
+           console.log("Balance is "+this.amount);
+       }
+        }
+        var b=new Bank();
+        console.log(b.amount);
+              b.withdraw(1000);
+              b.balance();
+     </script>
+     <body bgcolor="pink">
+         <p id="abc"></p>
+        
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+    </body>
+</html>

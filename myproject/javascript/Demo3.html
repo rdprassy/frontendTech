@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <script>
+        function func()
+        {
+            var name=document.getElementById("user").value;
+        //    document.getElementById("abc").innerText=name;
+        var d = new Date();
+        d.toLocaleTimeString();
+        // document.getElementById("abc").innerHTML =d.getDate()+"/"+parseInt(d.getMonth()+1);
+        document.getElementById("abc").innerHTML = d.toLocaleTimeString();
+
+        }
+
+       setInterval(func,1000);
+
+        // setTimeout(func,4000);
+    </script>
+    <body bgcolor="pink">
+        Enter your name : <input type="text" id="user" onkeyup="func()"/><br/>
+        <p id="abc"></p>
+    </body>
+</html>

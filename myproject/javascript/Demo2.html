@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>This is the title</title>
+    </head>
+
+   
+    <script>            
+        function func(){
+        //    var a = parseInt(prompt("Enter a number"));
+        //    var b = parseInt(prompt("Enter a number"));
+
+        //    alert("sum is "+(a+b))
+
+        //open("http://rdprassy.com")
+
+        var name = document.getElementById("user").value;
+        document.getElementById("weld").innerHTML="<h1>theater "+name+"</h1>"
+       // document.getElementById("weld").innerText="Hai"+name
+
+        }
+
+     </script>
+ 
+        <body>
+            <h1>This is the Heading</h1>
+            Enter your name: <input type = "text" id ="user"/><br>
+        
+        </body>
+
+        <!-- <button onclick="func()">Click me   </button> -->
+        <button onclick="func()"">Click me   </button>  
+        <p id = "weld"></p>
+
+        <button ondblclick=alert("Welcomedoubleclick")>Click me double   </button>
+
+
+   
+</html>
